@@ -4,13 +4,13 @@ class vehicle:
         self.topspeed = topspeed
         self.mileage = mileage
 
-    def __str__(self):
-        return f"Name:        {self.name}\n" \
+    def details(self):
+        print( f"Name:        {self.name}\n" \
                f"Topspeed:    {self.topspeed}\n" \
-               f"Mileage:     {self.mileage}"
+               f"Mileage:     {self.mileage}")
 
 motocompo = vehicle("Honda Motocompo", "30-50 km/h", "70 km/L @ 30 km/h")
-print(motocompo)
+motocompo.details()
 
 class classes:
     pass
@@ -31,7 +31,8 @@ class computer:
               f"CPU:    {self.cpu}\n"
               f"GPU:    {self.gpu}\n"
               f"MEM:    {self.mem}\n"
-              f"SPACE:  {self.storage}\n")
+              f"SPACE:  {self.storage}\n"
+              f"USR:    {self.usr}")
 
 anko = computer("Thinkpad X1 Carbon 6th Gen", "Intel i7-8650U (8) @ 4.2GHz", "Intel UHD Graphics 620", "16GB @ 2133MHz", "512GB Samsung PM981 M.2 SSD", "autumn@anko")
 anko.specs()
